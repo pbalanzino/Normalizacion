@@ -1,24 +1,28 @@
 {
-    "name": "desafiowebsocket",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "type": "module",
-    "scripts": {
-        "start": "node ./src/app.js",
-        "dev": "nodemon ./src/app.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "dotenv": "^16.0.1",
-        "express": "^4.17.3",
-        "knex": "^2.0.0",
-        "mysql": "^2.18.1",
-        "normalizr": "^3.6.2",
-        "socket.io": "^4.4.1",
-        "sqlite3": "^5.0.5"
-    }
+  "name": "desafiowebsocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "knex": "^2.0.0",
+    "mysql": "^2.18.1",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.4.1",
+    "sqlite3": "^5.0.5"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
 }

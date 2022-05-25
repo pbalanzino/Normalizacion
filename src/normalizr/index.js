@@ -1,9 +1,6 @@
 /** @format */
 
-import { schema, normalize, denormalize } from "normalizr";
-
-const text = new schema.Entity("text");
-const message = new schema.Entity("message", {});
+import { schema, normalize, denormalize } from 'normalizr'
 
 /* { 
     author: {
@@ -17,3 +14,9 @@ const message = new schema.Entity("message", {});
     text: 'mensaje del usuario'
 }
  */
+
+const user = new schema.Entity('users')
+const comment = new schema.Entity('comments', {
+  author: user,
+  text: comment,
+})
